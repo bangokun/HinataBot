@@ -46,18 +46,61 @@ let pp = await conn.profilePictureUrl(who).catch(_ => hwaifu.getRandom())
 ${cmenua}`
 
 let weem = `📮 *Note:* Jika menemukan bug, error atau kesulitan dalam penggunaan silahkan laporkan/tanyakan kepada Owner`
-    await conn.sendButton(m.chat, cap, weem, Buffer.alloc(0), [[em.getRandom() + ' All Menu', usedPrefix + 'allmenu'], [em.getRandom() + ' List Menu', usedPrefix + 'menulist']], m, { mimetype: mim_.getRandom(), fileName: ucapan, pageCount: fpagedoc, fileLength: fsizedoc, seconds: fsizedoc, jpegThumbnail: await( await fetch(thumbnailUrl.getRandom())).buffer(), contextInfo: {
+    let pusat = ["ke1", "ke2", "ke3", "ke4", "ke5"]
+    let pilih = pusat.getRandom()
+    if (pilih == "ke1") {
+    let btn = [{
+                                urlButton: {
+                                    displayText: 'Source Code',
+                                    url: sgh
+                                }
+                            }, {
+                                callButton: {
+                                    displayText: 'Number Phone Owner',
+                                    phoneNumber: nomorown
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: em.getRandom() + ' All Menu',
+                                    id: usedPrefix + 'allmenu'
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: em.getRandom() + ' List Menu',
+                                    id: usedPrefix + 'menulist'
+                                }  
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'Script',
+                                    id: '.sc'
+                                }
+                            }]
+        await conn.sendButtonGif(m.chat, cap, weem, { url: 'https://telegra.ph/file/15209657f9d4f59c7ca1e.mp4' }, btn, knimg)
+        }
+        if (pilih == "ke2") {
+        await conn.send2ButtonDoc(m.chat, cap, weem, em.getRandom() + ' All Menu', usedPrefix + 'allmenu', em.getRandom() + ' List Menu', usedPrefix + 'menulist', fpayment, adReply)
+        }
+        if (pilih == "ke3") {
+        await conn.send2ButtonLoc(m.chat, knimg, cap, weem + '\n\n' + botdate, em.getRandom() + ' All Menu', usedPrefix + 'allmenu', em.getRandom() + ' List Menu', usedPrefix + 'menulist', m)
+        }
+        if (pilih == "ke4") {
+        await conn.sendTemplateButtonLoc(m.chat, knimg, cap, weem + '\n\n' + botdate, em.getRandom() + ' List Menu', usedPrefix + 'menulist', m)
+        }
+        if (pilih == "ke5") {
+        await conn.sendButton(m.chat, cap, weem, Buffer.alloc(0), [[em.getRandom() + ' All Menu', usedPrefix + 'allmenu'], [em.getRandom() + ' List Menu', usedPrefix + 'menulist']], m, { mimetype: mim_.getRandom(), fileName: ucapan, pageCount: fpagedoc, fileLength: fsizedoc, seconds: fsizedoc, jpegThumbnail: await( await fetch(thumbnailUrl.getRandom())).buffer(), contextInfo: {
           externalAdReply :{
           showAdAttribution: true,
     mediaUrl: lin_.getRandom(),
     mediaType: 2,
     description: wm, 
-    title: '👋 Hai, ' + name,
+    title: '👋 Hai, ' + name + ' ' + ucapan,
     body: botdate,
     thumbnail: knimg,
     sourceUrl: sgc
      }}
   })
+        }
+        
 }
 
 handler.help = ['menu', 'help', '?']

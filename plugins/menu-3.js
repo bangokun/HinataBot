@@ -388,11 +388,47 @@ const listMessage = {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    conn.sendHydrated(m.chat, text.trim(), wm + '\n\n' + botdate, knimg, gcwangsaf, em.getRandom() + ' Hinata Group', who.split`@`[0], em.getRandom() + ' Your Number', [
-      ['🎀 Menu', '/menu'],
-      ['🪄 Owner', '/owner'],
-      ['🔖 Test', '/ping']
-    ], null, false, { mentions: [text] })
+    let pusat = ["ke1", "ke2", "ke3", "ke4"]
+    let pilih = pusat.getRandom()
+    if (pilih == "ke1") {
+    let btn = [{
+                                urlButton: {
+                                    displayText: 'Source Code',
+                                    url: sgh
+                                }
+                            }, {
+                                callButton: {
+                                    displayText: 'Number Phone Owner',
+                                    phoneNumber: nomorown
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: em.getRandom() + ' All Menu',
+                                    id: usedPrefix + 'allmenu'
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: em.getRandom() + ' List Menu',
+                                    id: usedPrefix + 'menulist'
+                                }  
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'Script',
+                                    id: '.sc'
+                                }
+                            }]
+        await conn.sendButtonGif(m.chat, cap, weem, { url: 'https://telegra.ph/file/15209657f9d4f59c7ca1e.mp4' }, btn, knimg)
+        }
+        if (pilih == "ke2") {
+        await conn.send2ButtonDoc(m.chat, cap, weem, em.getRandom() + ' All Menu', usedPrefix + 'allmenu', em.getRandom() + ' List Menu', usedPrefix + 'menulist', fpayment, adReply)
+        }
+        if (pilih == "ke3") {
+        await conn.send2ButtonLoc(m.chat, knimg, cap, weem + '\n\n' + botdate, em.getRandom() + ' All Menu', usedPrefix + 'allmenu', em.getRandom() + ' List Menu', usedPrefix + 'menulist', m)
+        }
+        if (pilih == "ke4") {
+        await conn.sendTemplateButtonLoc(m.chat, knimg, cap, weem + '\n\n' + botdate, em.getRandom() + ' List Menu', usedPrefix + 'menulist', m)
+        }
+        
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
     throw e
