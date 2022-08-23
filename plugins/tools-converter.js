@@ -6,12 +6,7 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let pp = await conn.profilePictureUrl(who).catch(_ => hwaifu.getRandom())
 let name = await conn.getName(who)
-let q = m.quoted ? m.quoted : m
-  let mime = (q.msg || q).mimetype || ''
-  if (!mime) throw 'No media found'
-  let media = await q.download()
-  let isTele = /image\/(png|jpe?g|gif)|video\/mp4/.test(mime)
-  let link = await (isTele ? uploadImage : uploadFile)(media)
+
   if (!text) throw `Contoh penggunaan ${usedPrefix}${command} Naruto`
   
   if (command == 'brailletotext') {
@@ -30,6 +25,10 @@ let dapet = json.result
 }
 
 if (command == 'tocartoon') {
+let q = m.quoted ? m.quoted : m
+  let media = await q.download()
+  let isTele = /image\/(png|jpe?g|gif)|video\/mp4/.test(mime)
+  let link = await (isTele ? uploadImage : uploadFile)(media)
 let res = 'https://violetics.pw/api/converter/photo-to-cartoon?apikey=beta&img=' + link
 let caption = `*⎔┉━「 ${command} 」━┉⎔*
 🤠 *Query* : ${link}`
