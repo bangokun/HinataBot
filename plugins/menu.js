@@ -205,12 +205,12 @@ let handler = async (m, { conn, groupMetadata, usedPrefix: _p, __dirname }) => {
                             }, {
                                 quickReplyButton: {
                                     displayText: em.getRandom() + ' All Menu',
-                                    id: usedPrefix + 'allmenu'
+                                    id: _p + 'allmenu'
                                 }
                             }, {
                                 quickReplyButton: {
                                     displayText: em.getRandom() + ' List Menu',
-                                    id: usedPrefix + 'menulist'
+                                    id: _p + 'menulist'
                                 }  
                             }, {
                                 quickReplyButton: {
@@ -218,16 +218,16 @@ let handler = async (m, { conn, groupMetadata, usedPrefix: _p, __dirname }) => {
                                     id: '.sc'
                                 }
                             }]
-        await conn.sendButtonGif(m.chat, cap, weem, { url: 'https://telegra.ph/file/15209657f9d4f59c7ca1e.mp4' }, btn, knimg)
+        await conn.sendButtonGif(m.chat, text.trim(), wm, { url: 'https://telegra.ph/file/15209657f9d4f59c7ca1e.mp4' }, btn, knimg)
         }
         if (pilih == "ke2") {
-        await conn.send2ButtonDoc(m.chat, cap, weem, em.getRandom() + ' All Menu', usedPrefix + 'allmenu', em.getRandom() + ' List Menu', usedPrefix + 'menulist', fpayment, adReply)
+        await conn.send2ButtonDoc(m.chat, text.trim(), wm, em.getRandom() + ' All Menu', _p + 'allmenu', em.getRandom() + ' List Menu', _p + 'menulist', fpayment, adReply)
         }
         if (pilih == "ke3") {
-        await conn.send2ButtonLoc(m.chat, knimg, cap, weem + '\n\n' + botdate, em.getRandom() + ' All Menu', usedPrefix + 'allmenu', em.getRandom() + ' List Menu', usedPrefix + 'menulist', m)
+        await conn.send2ButtonLoc(m.chat, knimg, text.trim(), wm + '\n\n' + botdate, em.getRandom() + ' All Menu', _p + 'allmenu', em.getRandom() + ' List Menu', _p + 'menulist', m)
         }
         if (pilih == "ke4") {
-        await conn.sendTemplateButtonLoc(m.chat, knimg, cap, weem + '\n\n' + botdate, em.getRandom() + ' List Menu', usedPrefix + 'menulist', m)
+        await conn.sendTemplateButtonLoc(m.chat, knimg, text.trim(), wm + '\n\n' + botdate, em.getRandom() + ' List Menu', _p + 'menulist', m)
         }
         
   } catch (e) {

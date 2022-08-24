@@ -187,7 +187,7 @@ case 'neon':
 case 'neonlight':
 case 'neonpl':
 case 'toxic':
-        let tpe = `https://restapi.frteam.xyz/textpro/${args[0]}?text=${one}&apikey=Hrbot`
+        let tpr = `https://restapi.frteam.xyz/textpro/${args[0]}?text=${one}&apikey=Hrbot`
         conn.sendButtonImg(m.chat, tpr, wm, 'Nih.jpg', 'To Sticker', '.s', fakes, adReply)
             break
             case 'wanted':
