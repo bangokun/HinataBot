@@ -2,7 +2,29 @@ import { sticker } from '../lib/sticker.js'
 import { EmojiAPI } from 'emoji-api' 
 const emoji = new EmojiAPI()
 
-let handler = async (m, { conn, args, usedPrefix, command, isPrems }) => {
+let handler = async (m, { conn, args, text, usedPrefix, command, isPrems }) => {
+try {
+let name = await conn.getName(m.sender)
+  let emo = ["apple",
+"facebook",
+"google",
+"microsoft",
+"samsung",
+"skype",
+"twitter",
+"whatsapp"]
+	let row = Object.keys(emo).map((v, index) => ({
+		title: '📌 emoji ' + emo[v],
+		description: '\nBy: ' + wm,
+		rowId: usedPrefix + 'getsticker ' + 'https://botcahx-rest-api.herokuapp.com/api/emoji/' + emo[v] + '?emoji=' + args[1]
+	}))
+	let button = {
+		buttonText: `☂️ ${command} Search Disini ☂️`,
+		description: `⚡${name} Silakan pilih ${command} Search di tombol di bawah...\n*Teks yang anda kirim:* ${text}\n\nKetik ulang *${usedPrefix + command}* teks anda untuk mengubah teks lagi`,
+		footerText: wm
+	}
+	return await conn.sendListM(m.chat, button, row, m)
+	} catch {
 let er = `
 *[❗] Ketik seperti ini*
 *${htjava} ${usedPrefix + command} <tipe> <emoji>*
@@ -140,7 +162,10 @@ break
 }
 } catch (e) {
 throw er
-}}}
+}}
+
+}
+}
 handler.help = ['emoji <tipe> <emoji>']
 handler.tags = ['sticker'] 
 handler.command = ['emoji', 'smoji', 'semoji']
