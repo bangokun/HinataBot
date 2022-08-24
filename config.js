@@ -50,7 +50,7 @@ global.APIs = {
 /*Apikey*/
 global.APIKeys = {
  'https://api.neoxr.my.id' : 'JeJU827J',
- 'https://api.lolhuman.xyz' : '327a6596e4c4baa20c756132',
+ 'https://api.lolhuman.xyz' : 'bukanitucuy14315195',
  'https://api.xteam.xyz' : 'NezukoTachibana281207',
  'https://api.zeks.xyz' : 'apivinz',
  'https://hardianto-chan.herokuapp.com' : 'hardianto',
@@ -74,18 +74,19 @@ global.xckey = 'BOhjM2hUVn'
 
 /*List Lolkey
 '327a6596e4c4baa20c756132'
+'bukanitucuy14315195'
 */
 
 /*Number*/
 global.nomorbot = '6285171216276'
 global.nomorown = '6282195322106'
-global.namebot = 'ᴴ ᴵ ᴺ ᴬ ᵀ ᴬ ⁻ ᴹ ᴰ'
+global.namebot = 'ʜɪɴᴀᴛᴀ-ʙᴏᴛ'
 global.nameown = '「 Oᴡɴᴇʀ 」'
 
 /*Watermark*/
-global.wm = '                「 ᴴ ᴵ ᴺ ᴬ ᵀ ᴬ ⁻ ᴹ ᴰ あ⁩ 」'
+global.wm = '                「 ʜɪɴᴀᴛᴀ-ʙᴏᴛ あ⁩ 」'
 global.wm2 = '꒷︶꒷꒥꒷ ‧₊˚ ꒰ฅ˘օառɛʀ˘ฅ ꒱ ‧₊˚꒷︶꒷꒥꒷'
-global.wm3 = '⫹⫺ ᴴ ᴵ ᴺ ᴬ ᵀ ᴬ ⁻ ᴹ ᴰ'
+global.wm3 = '⫹⫺ ʜɪɴᴀᴛᴀ-ʙᴏᴛ'
 global.botdate = `⫹⫺ Date :  ${moment.tz('Asia/Jakarta').format('DD/MM/YY')}`
 global.bottime = `𝗧 𝗜 𝗠 𝗘 : ${moment.tz('Asia/Jakarta').format('HH:mm:ss')}`
 global.titlebot = `⫹⫺ Time Sever : ${moment.tz('Asia/Jakarta').format('HH:mm:ss')}\n⫹⫺ Date Server :  ${moment.tz('Asia/Jakarta').format('DD/MM/YY')}`
@@ -403,37 +404,37 @@ global.fpagedoc = '7279200'
 global.thumbdoc = 'https://telegra.ph/file/6e45318d7c76f57e4a8bd.jpg'
 
 /*Hiasan*/
-global.dmenut = '❏═┅═━–〈'
+global.dmenut = '❏─┅──┅〈'
 global.dmenub = '┊•'
 global.dmenub2 = '┊'
-global.dmenuf = '┗––––––––––✦'
+global.dmenuf = '┗┅────────┅✦'
 
 /*Hiasan*/
-global.dashmenu = '┅━━━━━═┅═❏ *DASHBOARD* ❏═┅═━━━━━┅'
-global.cmenut = '❏––––––『'
-global.cmenuh = '』––––––'
+global.dashmenu = '┅────┅─❏ *𝐃𝐀𝐒𝐇𝐁𝐎𝐀𝐑𝐃* ❏─┅────┅'
+global.cmenut = '❏┅────┅『'
+global.cmenuh = '』┅────┅'
 global.cmenub = '┊✦ '
-global.cmenuf = '┗━═┅═━––––––๑\n'
+global.cmenuf = '┗──┅───────┅๑\n'
 global.cmenua = '\n⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘ ⌕\n     '
 global.pmenus = '✦'
 
-global.htki = '––––––『'
-global.htka = '』––––––'
+global.htki = '┅────┅『'
+global.htka = '』┅────┅'
 global.lopr = 'Ⓟ'
 global.lolm = 'Ⓛ'
 global.htjava = '⫹⫺'
 
 /*Watermark*/
 global.stickpack = '.'
-global.stickauth = `☂︎ ᴴ ᴵ ᴺ ᴬ ᵀ ᴬ ⁻ ᴹ ᴰ\n⫹⫺ Whatsapp BOT\nwa.me/${global.nomorbot}`
+global.stickauth = `☂︎ ʜɪɴᴀᴛᴀ-ʙᴏᴛ\n⫹⫺ 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩\nwa.me/${global.nomorbot}`
 global.packname = '☂︎ Cʀᴇᴀᴛᴇᴅ Bʏ'
-global.author = 'ᴴ ᴵ ᴺ ᴬ ᵀ ᴬ ⁻ ᴹ ᴰ X Wudysoft'
+global.author = 'ʜɪɴᴀᴛᴀ-ʙᴏᴛ X Wudysoft'
 global.multiplier = 10
 
 /*Pesan*/
-global.eror = 'Erorr...'
-global.wait = 'Wait...'
-global.render = 'Render...'
+global.eror = '*ᴇʀᴏʀʀ!*'
+global.wait = '*ᴡᴀɪᴛ!*'
+global.render = '*ʀᴇɴᴅᴇʀ!*'
 global.webs = 'https://s.id/Cerdasin62'
 global.logo = 'https://i.pinimg.com/564x/f7/d2/e4/f7d2e48fd59a8c01cd396bfc70b0a2d1.jpg'
 global.gcwangsaf = 'https://chat.whatsapp.com/Fxz8FpQ0ddr2GrEjfYkJ1E'
