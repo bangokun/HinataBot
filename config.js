@@ -6,16 +6,16 @@ import moment from 'moment-timezone'
 
 /*Oᴡɴᴇʀ number*/
 global.owner = [
-  ['6282195322106', '️Oᴡɴᴇʀ One', true],
-  ['6282195322106', '️Oᴡɴᴇʀ Two', true],
-  ['6282195322106', '️Oᴡɴᴇʀ Three', true],
-  ['6282195322106', '️Oᴡɴᴇʀ Four', true],
-  ['6282195322106', '️Oᴡɴᴇʀ Five', true],
-  ['6282195322106', '️Oᴡɴᴇʀ Six', true],
-  ['6282195322106', '️Oᴡɴᴇʀ Seven', true],
-  ['6282195322106', '️Oᴡɴᴇʀ Eight', true],
-  ['6282195322106', '️Oᴡɴᴇʀ Nine', true],
-  ['6282195322106', '️Oᴡɴᴇʀ Teen', true]
+  ['6285738639969', '️Oᴡɴᴇʀ One', true],
+  ['6285738639969', '️Oᴡɴᴇʀ Two', true],
+  ['6285738639969', '️Oᴡɴᴇʀ Three', true],
+  ['6285738639969', '️Oᴡɴᴇʀ Four', true],
+  ['6285738639969', '️Oᴡɴᴇʀ Five', true],
+  ['6285738639969', '️Oᴡɴᴇʀ Six', true],
+  ['6285738639969', '️Oᴡɴᴇʀ Seven', true],
+  ['6285738639969', '️Oᴡɴᴇʀ Eight', true],
+  ['6285738639969', '️Oᴡɴᴇʀ Nine', true],
+  ['6285738639969', '️Oᴡɴᴇʀ Teen', true]
 ]
 global.mods = []
 global.prems = []
@@ -80,12 +80,12 @@ global.xckey = 'BOhjM2hUVn'
 /*Number*/
 global.nomorbot = '6285171216276'
 global.nomorown = '6282195322106'
-global.namebot = 'ʜɪɴᴀᴛᴀ-ʙᴏᴛ'
-global.nameown = '「 Oᴡɴᴇʀ 」'
+global.namebot = 'Chonix-BOT'
+global.nameown = '「 Crash 」'
 
 /*Watermark*/
-global.wm = '                「 ʜɪɴᴀᴛᴀ-ʙᴏᴛ あ⁩ 」'
-global.wm2 = '꒷︶꒷꒥꒷ ‧₊˚ ꒰ฅ˘օառɛʀ˘ฅ ꒱ ‧₊˚꒷︶꒷꒥꒷'
+global.wm = '                「 Chonix-BOT あ⁩ 」'
+global.wm2 = 'Chonix'
 global.wm3 = '⫹⫺ ʜɪɴᴀᴛᴀ-ʙᴏᴛ'
 global.botdate = `⫹⫺ Date :  ${moment.tz('Asia/Jakarta').format('DD/MM/YY')}`
 global.bottime = `𝗧 𝗜 𝗠 𝗘 : ${moment.tz('Asia/Jakarta').format('HH:mm:ss')}`
